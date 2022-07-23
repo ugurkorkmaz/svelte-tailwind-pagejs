@@ -44,11 +44,11 @@
 
 ## :dart: About ##
 
-Describe your project
+Creating a combination of Svelte, Tailwindcss and Page.js tools together.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Update frequently;\
+:heavy_check_mark: Update frequently
 
 ## :rocket: Technologies ##
 
