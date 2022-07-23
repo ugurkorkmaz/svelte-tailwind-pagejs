@@ -13,7 +13,7 @@ export const routes = writable([
         name: 'home',
         path: '/',
         component: Home,
-        auth: true
+        auth: false
     },
     {
         name: 'signup',
