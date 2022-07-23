@@ -12,6 +12,3 @@ const login = () => {
   <title>Signin</title>
 </svelte:head>
 
-<button class="w-6" on:click={login}>
-    Login
-</button>

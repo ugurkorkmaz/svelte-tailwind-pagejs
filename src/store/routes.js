@@ -5,8 +5,8 @@ import PAGE from "page";
 import Home from "routes/Home.svelte";
 import Signup from "routes/auth/Signup.svelte";
 import Signin from 'routes/auth/Signin.svelte';
-import ForgotYourPassword from 'routes/auth/ForgotYourPassword.svelte';
 
+export const page = PAGE
 
 export const routes = writable([
     {
@@ -27,12 +27,4 @@ export const routes = writable([
         component: Signin,
         auth: false
     },
-    {
-        name: 'forgot-password',
-        path: '/auth/forgot-password',
-        component: ForgotYourPassword,
-        auth: false
-    }  
 ]);
-
-export const page = PAGE
