@@ -1,14 +1,15 @@
 import { writable } from "svelte/store";
 
-import PAGE from "page";
+import Page from "page";
 
 import Home from "routes/Home.svelte";
 import Signup from "routes/auth/Signup.svelte";
 import Signin from 'routes/auth/Signin.svelte';
 
-export const page = PAGE
-
-export const routes = writable([
+export const page    = writable(Page);
+export const params  = writable({});
+export const current = writable(null);
+export const routes  = writable([
     {
         name: 'home',
         path: '/',
