@@ -66,11 +66,11 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 ## :checkered_flag: Starting ##
 
 ```bash
-# install NPX
-$ npm install -g npx
+# install degit
+$ npm install -g degit
 
-# Access
-$ npx github:ugurkorkmaz/svelte-tailwind-pagejs
+# clone the repository
+$ degit ugurkorkmaz/svelte-tailwind-pagejs
 
 # Install dependencies
 $ npm install
