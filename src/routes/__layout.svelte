@@ -1,29 +1,31 @@
 <script>
-  import { routes, page } from "store/routes.js";
+  import { routes, page, params, current } from "store/routes.js";
   import { auth } from "store/auth.js";
 
-  let current = null;
-  let params = {};
   $routes.forEach((route) => {
-    page(
+    $page(
       route.path,
       (ctx, next) => {
-        params = { ...ctx.params };
+        params.update(() => {
+          return{ ...ctx.params };
+        });
         next();
       },
       () => {
         if (route.auth && $auth) {
-          page.redirect("/auth/sign-in");
+          $page.redirect("/auth/sign-in");
         } else {
-          current = route.component;
+          current.update(() => {
+            return route.component;
+          });
         }
       }
     );
   });
-  page.start();
+  $page.start();
 </script>
 
-<svelte:component this={current} {params} />
+<svelte:component this={$current} />
 
 <style lang="postcss" global>
   @tailwind base;
