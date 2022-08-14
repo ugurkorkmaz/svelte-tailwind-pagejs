@@ -2,5 +2,7 @@
 /public/app.js
 /public/app.js.map
 /public/app.css
+/build/
 
+.pnpm-lock.yaml
 .DS_Store

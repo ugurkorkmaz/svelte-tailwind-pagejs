@@ -1,4 +1,4 @@
-import App from 'routes/__layout.svelte';
+import App from '@/route/__layout.svelte';
 
 const app = new App({
 	target: document.getElementById('app'),

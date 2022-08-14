@@ -1,6 +1,6 @@
 <script>
-import { auth } from "store/auth";
-import { page } from "store/routes";
+import { auth } from "@/store/auth";
+import { page } from "@/store/routes";
 
 const login = () => {
     auth.update(() => {return false});
